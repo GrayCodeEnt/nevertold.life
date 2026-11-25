@@ -36,11 +36,40 @@ a{color:#000}
 .nt-footer{background:#fff;border-top:1px solid #000;color:#000;padding:56px 24px 48px}
 .nt-footer .nt-foot-brand{color:#000;font-size:20px}
 .nt-foot-links a{color:#000}
-.shipping-details{border:1px solid #e5e5e5!important;border-radius:0!important}
 .wrap>img{width:min(760px,100%)!important;height:auto!important;background:#f7f7f7!important;border-radius:0!important}
 #ss-hoodie,#ss-pants{width:min(520px,46%)!important;height:auto!important;border-radius:0!important}
 h2{letter-spacing:.03em;font-size:32px;font-weight:normal;margin:0 0 18px}
 h3{letter-spacing:.03em;font-weight:normal}
+</style>
+<style>/* nt-hero-v3 — Off-White-style hero: spinning Original Hoodie turntable */
+.hero-v3{background:#fff;text-align:center;padding:64px 18px 72px;margin:0 auto 40px}
+.hero-v3-bis{display:block;width:min(320px,70%);height:auto;margin:0 auto 18px}
+.spin-scene{perspective:1400px;width:min(580px,92vw);aspect-ratio:1/1;margin:0 auto}
+.spin-card{position:relative;width:100%;height:100%;transform-style:preserve-3d;animation:nt-spin 9s linear infinite}
+.spin-face{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.spin-front{transform:rotateY(0deg)}
+.spin-back{transform:rotateY(180deg)}
+@keyframes nt-spin{from{transform:rotateY(0deg)}to{transform:rotateY(360deg)}}
+.hero-v3 .name{font-size:31px;font-weight:bold;margin:26px 0 2px;color:#000}
+.hero-v3 .price{font-size:22px;font-weight:bold;color:#000;margin:0}
+.hero-v3 .btn{background:#000;color:#fff;border:none;margin-top:14px}
+@media (prefers-reduced-motion:reduce){.spin-card{animation:none}}
+</style>
+<style id="nt-alt-v1">
+.band{margin:0 calc(50% - 50vw);padding:40px calc(50vw - 50% + 16px)}
+.band-w{background:#fff;color:#000}
+.band-b{background:#000;color:#fff}
+.band-b h2,.band-b h2 a{color:#fff}
+.band-b .card{background:#0d0d0d;border-color:#2e2e2e;color:#fff}
+.band-b .card .price{color:#fff}
+.band-b p a{color:#fff}
+.band-w .card{background:#fff}
+.band-y{background:#FFEF00;color:#000}
+.band-y h2,.band-y h2 a{color:#000}
+.band-y .card{background:#fff;color:#000;border-color:#d8c900}
+.band-y p a{color:#000}
+.band .grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.band h2{margin-top:0!important}
 </style>
 </head><body><header><h1>NEVER TOLD</h1><div class="sub">nevertold.life</div></header>
 <!-- nt-nav-v1 -->
@@ -52,26 +81,32 @@ h3{letter-spacing:.03em;font-weight:normal}
 <a href="/category/sweatpants.html">Sweatpants</a>
 <a href="/category/jeans.html">Jeans</a>
 <a href="/category/canary-yellow.html">Canary Yellow</a>
-<a href="/#shipping">Shipping</a>
+<a href="/shipping.html">Shipping</a>
 </nav>
 <div class="wrap">
-<div class="hero"><div class="hero-row"><img class="hood" src="/assets/original-hoodie.png" alt="Never Told Hoodie Original"><img class="bis" src="/assets/back-in-stock-clear.webp" alt="BACK IN STOCK"></div>
-<p class="name">The Never Told Original Hoodie</p><p class="price">$50</p><a class="btn" href="/products/never-told-hoodie-original-67.html">Shop Now</a></div>
-<h2>Start Here — Shop by Category</h2>
-<p class="sub" style="text-align:left">Every collection has its own page. Pick a category to shop it.</p>
-<div class="tiles">
-<a class="tile" href="/category/canary-yellow.html"><img src="/assets/p24.webp" alt="Canary Yellow — Limited Edition"><div class="tname">Canary Yellow — Limited Edition</div><div class="tcount">10 items</div> <span class="le">Limited Edition</span></a>
-<a class="tile" href="/category/crewnecks.html"><img src="/assets/p05.webp" alt="Crewnecks"><div class="tname">Crewnecks</div><div class="tcount">2 items</div></a>
-<a class="tile" href="/category/hoodies.html"><img src="/assets/p67.png" alt="Hoodies"><div class="tname">Hoodies</div><div class="tcount">15 items</div></a>
-<a class="tile" href="/category/jackets.html"><img src="/assets/p11.webp" alt="Jackets"><div class="tname">Jackets</div><div class="tcount">2 items</div></a>
-<a class="tile" href="/category/jeans.html"><img src="/assets/p09.webp" alt="Jeans"><div class="tname">Jeans</div><div class="tcount">5 items</div></a>
-<a class="tile" href="/category/quarter-zips.html"><img src="/assets/p02.webp" alt="Quarter-Zips"><div class="tname">Quarter-Zips</div><div class="tcount">2 items</div></a>
-<a class="tile" href="/category/shorts.html"><img src="/assets/p28.webp" alt="Shorts"><div class="tname">Shorts</div><div class="tcount">1 items</div></a>
-<a class="tile" href="/category/sweaters.html"><img src="/assets/p03.webp" alt="Sweaters"><div class="tname">Sweaters</div><div class="tcount">1 items</div></a>
-<a class="tile" href="/category/sweatpants.html"><img src="/assets/p01.webp" alt="Sweatpants"><div class="tname">Sweatpants</div><div class="tcount">9 items</div></a>
-<a class="tile" href="/category/t-shirts.html"><img src="/assets/p14.webp" alt="T-Shirts"><div class="tname">T-Shirts</div><div class="tcount">16 items</div></a>
-<a class="tile" href="/category/tracksuits.html"><img src="/assets/p32.webp" alt="Tracksuits"><div class="tname">Tracksuits</div><div class="tcount">3 items</div></a>
+<!-- nt-hero-v3 -->
+<div class="hero-v3">
+<img class="hero-v3-bis" src="/assets/back-in-stock-clear.webp" alt="BACK IN STOCK">
+<div class="spin-scene" role="img" aria-label="The Never Told Original Hoodie, front and back, rotating">
+<div class="spin-card">
+<img class="spin-face spin-front" src="/assets/original-hoodie-front.webp" alt="The Never Told Original Hoodie — front">
+<img class="spin-face spin-back" src="/assets/original-hoodie-back.webp" alt="The Never Told Original Hoodie — back">
 </div>
+</div>
+<p class="name">The Never Told Original Hoodie</p><p class="price">$50</p><a class="btn" href="/products/never-told-hoodie-original-67.html">Shop Now</a></div>
+<!-- nt-home-cat3-v1 -->
+<section class="band band-y"><h2 style="margin-top:34px"><a href="/category/canary-yellow.html" style="color:inherit;text-decoration:none">Canary Yellow — Limited Edition</a></h2><div class="grid"><div class="card"><a href="/products/canary-yellow-sweatpants-001-24.html"><img src="/assets/p24.webp" alt="Canary Yellow Sweatpants 001"></a><div>Canary Yellow Sweatpants 001</div><div class="price">$100</div><div><span class="le">LIMITED EDITION</span></div></div><div class="card"><a href="/products/canary-yellow-t-shirt-001-25.html"><img src="/assets/p25.webp" alt="Canary Yellow T-Shirt 001"></a><div>Canary Yellow T-Shirt 001</div><div class="price">$100</div><div><span class="le">LIMITED EDITION</span></div></div><div class="card"><a href="/products/canary-yellow-sweatpants-002-26.html"><img src="/assets/p26.webp" alt="Canary Yellow Sweatpants 002"></a><div>Canary Yellow Sweatpants 002</div><div class="price">$100</div><div><span class="le">LIMITED EDITION</span></div></div></div><p style="margin-top:12px"><a href="/category/canary-yellow.html">View all Canary Yellow — Limited Edition →</a></p></section>
+<section class="band band-w"><h2 style="margin-top:34px"><a href="/category/crewnecks.html" style="color:inherit;text-decoration:none">Crewnecks</a></h2><div class="grid"><div class="card"><a href="/products/never-told-crewneck-001-5.html"><img src="/assets/p05.webp" alt="Never Told Crewneck 001"></a><div>Never Told Crewneck 001</div><div class="price">$35</div></div><div class="card"><a href="/products/never-told-crewneck-002-56.html"><img src="/assets/p56.webp" alt="Never Told Crewneck 002"></a><div>Never Told Crewneck 002</div><div class="price">$35</div></div></div><p style="margin-top:12px"><a href="/category/crewnecks.html">View all Crewnecks →</a></p></section>
+<section class="band band-b"><h2 style="margin-top:34px"><a href="/category/hoodies.html" style="color:inherit;text-decoration:none">Hoodies</a></h2><div class="grid"><div class="card"><a href="/products/never-told-hoodie-original-67.html"><img src="/assets/p67.png" alt="Never Told Hoodie Original"></a><div>Never Told Hoodie Original</div><div class="price">$50</div></div></div><div class="card"><a href="/products/never-told-sweater-001-3.html"><img src="/assets/p03.webp" alt="Never Told Sweater 001"></a><div>Never Told Sweater 001</div><div class="price">$75</div></div><div class="card"><a href="/products/never-told-hoodie-002-7.html"><img src="/assets/p07.webp" alt="Never Told Hoodie 002"></a><div>Never Told Hoodie 002</div><div class="price">$75</div></div><p style="margin-top:12px"><a href="/category/hoodies.html">View all Hoodies →</a></p></section>
+<section class="band band-w"><h2 style="margin-top:34px"><a href="/category/jackets.html" style="color:inherit;text-decoration:none">Jackets</a></h2><div class="grid"><div class="card"><a href="/products/never-told-jacket-002-60.html"><img src="/assets/p60.webp" alt="Never Told Jacket 002"></a><div>Never Told Jacket 002</div><div class="price">$100</div></div></div><p style="margin-top:12px"><a href="/category/jackets.html">View all Jackets →</a></p></section>
+<section class="band band-b"><h2 style="margin-top:34px"><a href="/category/jeans.html" style="color:inherit;text-decoration:none">Jeans</a></h2><div class="grid"><div class="card"><a href="/products/never-told-jeans-001-9.html"><img src="/assets/p09.webp" alt="Never Told Jeans 001"></a><div>Never Told Jeans 001</div><div class="price">$100</div></div><div class="card"><a href="/products/never-told-jeans-002-10.html"><img src="/assets/p10.webp" alt="Never Told Jeans 002"></a><div>Never Told Jeans 002</div><div class="price">$100</div></div><div class="card"><a href="/products/never-told-jeans-004-29.html"><img src="/assets/p29.webp" alt="Never Told Jeans 004"></a><div>Never Told Jeans 004</div><div class="price">$100</div></div></div><p style="margin-top:12px"><a href="/category/jeans.html">View all Jeans →</a></p></section>
+<section class="band band-w"><h2 style="margin-top:34px"><a href="/category/quarter-zips.html" style="color:inherit;text-decoration:none">Quarter-Zips</a></h2><div class="grid"><div class="card"><a href="/products/never-told-quarter-zip-001-2.html"><img src="/assets/p02.webp" alt="Never Told Quarter-Zip 001"></a><div>Never Told Quarter-Zip 001</div><div class="price">$40</div></div><div class="card"><a href="/products/never-told-quarter-zip-002-4.html"><img src="/assets/p04.webp" alt="Never Told Quarter-Zip 002"></a><div>Never Told Quarter-Zip 002</div><div class="price">$40</div></div></div><p style="margin-top:12px"><a href="/category/quarter-zips.html">View all Quarter-Zips →</a></p></section>
+<section class="band band-b"><h2 style="margin-top:34px"><a href="/category/shorts.html" style="color:inherit;text-decoration:none">Shorts</a></h2><div class="grid"><div class="card"><a href="/products/never-told-shorts-001-28.html"><img src="/assets/p28.webp" alt="Never Told Shorts 001"></a><div>Never Told Shorts 001</div><div class="price">$65</div></div></div><p style="margin-top:12px"><a href="/category/shorts.html">View all Shorts →</a></p></section>
+<section class="band band-w"><h2 style="margin-top:34px"><a href="/category/sets.html" style="color:inherit;text-decoration:none">Sets</a></h2><div class="grid" style="grid-template-columns:repeat(4,minmax(0,1fr))"><div class="card"><a href="/products/never-told-sweatsuit-set.html"><img src="/assets/sweatsuit-hoodie-black.jpg" alt="Never Told Sweatsuit Set"></a><div>Never Told Sweatsuit Set</div><div class="price">$50 / $50</div></div><div class="card"><a href="/products/never-told-hoodie-001-6.html"><img src="/assets/p06.webp" alt="Never Told Hoodie 001"></a><div>Never Told Hoodie 001</div><div class="price">$50</div></div><div class="card"><a href="/products/never-told-hoodie-005-34.html"><img src="/assets/p34.webp" alt="Never Told Hoodie 005"></a><div>Never Told Hoodie 005</div><div class="price">$50</div></div><div class="card"><a href="/products/never-told-jacket-001-11.html"><img src="/assets/p11.webp" alt="Never Told Jacket 001"></a><div>Never Told Jacket 001</div><div class="price">$100</div></div></div><p style="margin-top:12px"><a href="/category/sets.html">View all Sets →</a></p></section>
+<section class="band band-b"><h2 style="margin-top:34px"><a href="/category/sweatpants.html" style="color:inherit;text-decoration:none">Sweatpants</a></h2><div class="grid"></div><div class="card"><a href="/products/never-told-sweatpants-003-49.html"><img src="/assets/p49.webp" alt="Never Told Sweatpants 003"></a><div>Never Told Sweatpants 003</div><div class="price">$35</div></div><div class="card"><a href="/products/never-told-sweatpants-004-51.html"><img src="/assets/p51.webp" alt="Never Told Sweatpants 004"></a><div>Never Told Sweatpants 004</div><div class="price">$35</div></div><div class="card"><a href="/products/never-told-sweatpants-005-52.html"><img src="/assets/p52.webp" alt="Never Told Sweatpants 005"></a><div>Never Told Sweatpants 005</div><div class="price">$35</div></div><p style="margin-top:12px"><a href="/category/sweatpants.html">View all Sweatpants →</a></p></section>
+<section class="band band-w"><h2 style="margin-top:34px"><a href="/category/t-shirts.html" style="color:inherit;text-decoration:none">T-Shirts</a></h2><div class="grid"><div class="card"><a href="/products/never-told-t-shirt-001-14.html"><img src="/assets/p14.webp" alt="Never Told T-Shirt 001"></a><div>Never Told T-Shirt 001</div><div class="price">$25</div></div><div class="card"><a href="/products/never-told-t-shirt-002-15.html"><img src="/assets/p15.webp" alt="Never Told T-Shirt 002"></a><div>Never Told T-Shirt 002</div><div class="price">$25</div></div><div class="card"><a href="/products/never-told-t-shirt-003-16.html"><img src="/assets/p16.webp" alt="Never Told T-Shirt 003"></a><div>Never Told T-Shirt 003</div><div class="price">$25</div></div></div><p style="margin-top:12px"><a href="/category/t-shirts.html">View all T-Shirts →</a></p></section>
+<section class="band band-b"><h2 style="margin-top:34px"><a href="/category/tracksuits.html" style="color:inherit;text-decoration:none">Tracksuits</a></h2><div class="grid"><div class="card"><a href="/products/never-told-track-pants-001-32.html"><img src="/assets/p32.webp" alt="Never Told Track Pants 001"></a><div>Never Told Track Pants 001</div><div class="price">$75</div></div><div class="card"><a href="/products/never-told-track-jacket-001-33.html"><img src="/assets/p33.webp" alt="Never Told Track Jacket 001"></a><div>Never Told Track Jacket 001</div><div class="price">$75</div></div><div class="card"><a href="/products/never-told-track-jacket-002-45.html"><img src="/assets/p45.webp" alt="Never Told Track Jacket 002"></a><div>Never Told Track Jacket 002</div><div class="price">$75</div></div></div><p style="margin-top:12px"><a href="/category/tracksuits.html">View all Tracksuits →</a></p></section>
+<!-- /nt-home-cat3-v1 -->
 <h2 style="margin-top:34px">Shop Everything</h2>
 <p>Want to see the whole line in one place? <a href="/shop.html">Shop All products &rarr;</a></p>
 </div>
@@ -80,21 +115,8 @@ h3{letter-spacing:.03em;font-weight:normal}
 <div class="nt-foot-brand">NEVER TOLD</div>
 <div>nevertold.life</div>
 <div class="nt-foot-links">
-<a href="/">Home</a> · <a href="/shop.html">Shop All</a> · <a href="/category/canary-yellow.html">Canary Yellow — Limited Edition</a> · <a href="/#shipping">Shipping</a>
+<a href="/">Home</a> · <a href="/shop.html">Shop All</a> · <a href="/category/canary-yellow.html">Canary Yellow — Limited Edition</a> · <a href="/shipping.html">Shipping</a>
 </div>
 <div class="small">A Gray Code Enterprise brand · <a href="https://graycodeenterprise.net">graycodeenterprise.net</a></div>
 </footer>
-<a id="shipping"></a>
-<!-- shipping-details-v1 -->
-<div class="shipping-details" style="max-width:720px;margin:32px auto;padding:20px 24px;border:1px solid #444;border-radius:10px;text-align:left">
-<h2 style="margin-top:0">Shipping</h2>
-<p>Pick your speed at checkout.</p>
-<ul style="line-height:1.9">
-<li><strong>Special Line &mdash; $5</strong> &mdash; 10d avg; 95% in 15d</li>
-<li><strong>Special Line Pro &mdash; $10</strong> &mdash; 7d avg; 95% in 10d</li>
-<li><strong>International Express &mdash; $15</strong> &mdash; 5d avg; 95% in 7d</li>
-</ul>
-<p class="small">Shipping details from Tapstitch: These shipping times are estimates, not guarantees, and do not include the production time of POD products. Every piece is printed to order, then shipped with tracking.</p>
-</div>
-
 </body></html>
