@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Shop All — NEVER TOLD</title><link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&family=Rubik+Wet+Paint&family=Permanent+Marker&display=swap" rel="stylesheet"><style>body{background:#0b0b0b;color:#f2f2f2;font-family:Arial,Helvetica,sans-serif;margin:0}header{padding:28px 20px;text-align:center;border-bottom:2px solid #c9a227}h1{font-family:Anton,Arial;letter-spacing:.06em;color:#c9a227;margin:0;font-size:42px}.sub{color:#bbb;margin-top:6px}.wrap{max-width:1100px;margin:0 auto;padding:24px 16px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px}.card{background:#161616;border:1px solid #2c2c2c;border-radius:10px;padding:14px;text-align:center}.card img{width:100%;height:200px;object-fit:contain;background:#fff;border-radius:6px}.price{color:#c9a227;font-size:20px;font-weight:bold}a{color:#c9a227}.btn{display:inline-block;background:#c9a227;color:#000;padding:12px 26px;border-radius:6px;text-decoration:none;font-weight:bold;margin-top:14px}.cat-link{display:block;background:#161616;border:1px solid #2c2c2c;border-radius:10px;padding:18px;margin:10px 0;color:#f2f2f2;text-decoration:none;font-size:20px}.cat-count{color:#999;font-size:14px}.back{color:#999}.small{color:#888;font-size:13px}.opt-label{margin:16px 0 8px;color:#bbb}.opts{display:flex;flex-wrap:wrap;gap:8px}.opt{background:#161616;color:#f2f2f2;border:1px solid #444;border-radius:20px;padding:8px 16px;cursor:pointer;font-size:15px}.opt.on{background:#c9a227;color:#000;border-color:#c9a227;font-weight:bold}.le{display:inline-block;background:#c9a227;color:#000;font-weight:bold;font-size:12px;letter-spacing:.08em;border-radius:4px;padding:3px 10px;margin-top:8px}.hero{position:relative;background:#000;text-align:center;padding:38px 18px;border-radius:12px;margin-bottom:26px;overflow:hidden;border:2px solid #c9a227}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 34px,rgba(120,120,120,.55) 34px 42px,rgba(30,30,30,.9) 42px 46px);pointer-events:none}
+.hero>*{position:relative}
+.hero .big{font-family:'Rubik Wet Paint','Permanent Marker',cursive;font-size:clamp(30px,5vw,42px);line-height:1.1;letter-spacing:.03em;margin:0;transform:rotate(-2deg);color:#ffd83d;-webkit-text-stroke:2px #000;paint-order:stroke fill;text-shadow:3px 3px 0 #000,-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000,6px 6px 0 rgba(0,0,0,.8)}
+.hero:after{content:"";position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle,rgba(255,216,61,.5) 1.5px,transparent 2px),radial-gradient(circle,rgba(255,216,61,.35) 1px,transparent 1.6px),radial-gradient(circle,rgba(255,255,255,.28) 1px,transparent 1.6px);background-size:130px 90px,90px 70px,70px 110px;background-position:10px 8px,40px 30px,75px 12px}
+.hero .name{font-size:31px;font-weight:bold;margin:12px 0 2px;color:#fff;text-shadow:2px 2px 0 #000}
+.hero .price{font-size:22px;font-weight:bold;color:#ffd83d;text-shadow:2px 2px 0 #000}
+.hero .btn{background:#c9a227;color:#000;margin-top:12px;border:2px solid #000}.hero img.bis{width:100%;height:auto;display:block;border-radius:8px}.hero img.hood{display:block;margin:14px auto 2px;height:280px;width:auto}.hero{background:#fff;border-color:#c9a227}.hero:before{display:none}.hero:after{display:none}.hero .name{color:#000;text-shadow:none}.hero .price{color:#b8912a;text-shadow:none}.hero{max-width:940px;margin:0 auto 26px}.hero .hero-row{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap}.hero .hero-row>img.bis{width:64%;height:auto}.hero .hero-row>img.hood{height:285px;width:auto;margin:0}</style><style>/* nt-clean-v1 */
+.nt-nav{display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:center;padding:14px 16px;background:#111;border-bottom:1px solid #2c2c2c}
+.nt-nav a{color:#f2f2f2;text-decoration:none;font-weight:bold;font-size:15px;letter-spacing:.03em}
+.nt-nav a:hover{color:#c9a227}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.tile{background:#161616;border:1px solid #2c2c2c;border-radius:10px;padding:14px;text-align:center;text-decoration:none;color:#f2f2f2;display:block}
+.tile img{width:100%;height:190px;object-fit:contain;background:#fff;border-radius:6px}
+.tile .tname{font-size:19px;font-weight:bold;margin-top:10px}
+.tile .tcount{color:#999;font-size:14px}
+.nt-footer{border-top:2px solid #c9a227;margin-top:44px;padding:26px 16px 34px;text-align:center;color:#bbb}
+.nt-footer .nt-foot-brand{font-family:Anton,Arial;letter-spacing:.06em;color:#c9a227;font-size:24px}
+.nt-foot-links{margin:10px 0}
+.nt-foot-links a{color:#c9a227}
+</style></head><body><header><h1>NEVER TOLD</h1><div class="sub">nevertold.life</div></header>
+<!-- nt-nav-v1 -->
+<nav class="nt-nav">
+<a href="/">Home</a>
+<a href="/shop.html">Shop All</a>
+<a href="/category/hoodies.html">Hoodies</a>
+<a href="/category/t-shirts.html">T-Shirts</a>
+<a href="/category/sweatpants.html">Sweatpants</a>
+<a href="/category/jeans.html">Jeans</a>
+<a href="/category/canary-yellow.html">Canary Yellow</a>
+<a href="/#shipping">Shipping</a>
+</nav>
+<div class="wrap">
+<p><a class="back" href="/">&larr; NEVER TOLD home</a></p>
+<h2>Shop All Products</h2>
+<div class="grid">
+<div class="card"><a href="/products/never-told-hoodie-original-67.html"><img src="/assets/p67.png" alt="Never Told Hoodie Original"></a><div>Never Told Hoodie Original</div><div class="price">$50</div></div>
+<div class="card"><a href="/products/never-told-sweatpants-001-1.html"><img src="/assets/p01.png" alt="Never Told Sweatpants 001"></a><div>Never Told Sweatpants 001</div><div class="price">$35</div></div>
+<div class="card"><a href="/products/never-told-quarter-zip-001-2.html"><img src="/assets/p02.png" alt="Never Told Quarter-Zip 001"></a><div>Never Told Quarter-Zip 001</div><div class="price">$40</div></div>
+<div class="card"><a href="/products/never-told-sweater-001-3.html"><img src="/assets/p03.png" alt="Never Told Sweater 001"></a><div>Never Told Sweater 001</div><div class="price">$75</div></div>
+<div class="card"><a href="/products/never-told-quarter-zip-002-4.html"><img src="/assets/p04.png" alt="Never Told Quarter-Zip 002"></a><div>Never Told Quarter-Zip 002</div><div class="price">$40</div></div>
+<div class="card"><a href="/products/never-told-crewneck-001-5.html"><img src="/assets/p05.png" alt="Never Told Crewneck 001"></a><div>Never Told Crewneck 001</div><div class="price">$35</div></div>
+<div class="card"><a href="/products/never-told-hoodie-001-6.html"><img src="/assets/p06.png" alt="Never Told Hoodie 001"></a><div>Never Told Hoodie 001</div><div class="price">$75</div></div>
+<div class="card"><a href="/products/never-told-hoodie-002-7.html"><img src="/assets/p07.png" alt="Never Told Hoodie 002"></a><div>Never Told Hoodie 002</div><div class="price">$75</div></div>
+<div class="card"><a href="/products/never-told-hoodie-003-8.html"><img src="/assets/p08.png" alt="Never Told Hoodie 003"></a><div>Never Told Hoodie 003</div><div class="price">$75</div></div>
+<div class="card"><a href="/products/never-told-jeans-001-9.html"><img src="/assets/p09.png" alt="Never Told Jeans 001"></a><div>Never Told Jeans 001</div><div class="price">$100</div></div>
+<div class="card"><a href="/products/never-told-jeans-002-10.html"><img src="/assets/p10.png" alt="Never Told Jeans 002"></a><div>Never Told Jeans 002</div><div class="price">$100</div></div>
+<div class="card"><a href="/products/never-told-jacket-001-11.html"><img src="/assets/p11.png" alt="Never Told Jacket 001"></a><div>Never Told Jacket 001</div><div class="price">$100</div></div>
+<div class="card"><a href="/products/never-told-jeans-003-12.html"><img src="/assets/p12.png" alt="Never Told Jeans 003"></a><div>Never Told Jeans 003</div><div class="price">$100</div></div>
+<div class="card"><a href="/products/never-told-hoodie-004-13.html"><img src="/assets/p13.png" alt="Never Told Hoodie 004"></a><div>Never Told Hoodie 004</div><div class="price">$75</div></div>
+<div class="card"><a href="/products/never-told-t-shirt-001-14.html"><img src="/assets/p14.png" alt="Never Told T-Shirt 001"></a><div>Never Told T-Shirt 001</div><div class="price">$25</div></div>
+<div class="card"><a href="/products/never-told-t-shirt-002-15.html"><img src="/assets/p15.png" alt="Never Told T-Shirt 002"></a><div>Never Told T-Shirt 002</div><div class="price">$25</div></div>
+<div class="card"><a href="/products/never-told-t-shirt-003-16.html"><img src="/assets/p16.png" alt="Never Told T-Shirt 003"></a><div>Never Told T-Shirt 003</div><div class="price">$25</div></div>
+<div class="card"><a href="/products/never-told-t-shirt-004-17.html"><img src="/assets/p17.png" alt="Never Told T-Shirt 004"></a><div>Never Told T-Shirt 004</div><div class="price">$25</div></div>
+<div class="card"><a href="/products/never-told-t-shirt-005-18.html"><img src="/assets/p18.png" alt="Never Told T-Shirt 005"></a><div>Never Told T-Shirt 005</div><div class="price">$25</div></div>
+<div class="card"><a href="/products/never-told-t-shirt-006-19.html"><img src="/assets/p19.png" alt="Never Told T-Shirt 006"></a><div>Never Told T-Shirt 006</div><div class="price">$25</div></div>
+<div class="card"><a href="/products/never-told-t-shirt-007-20.html"><img src="/assets/p20.png" alt="Never Told T-Shirt 007"></a><div>Never Told T-Shirt 007</div><div class="price">$25</div></div>
+<div class="card"><a href="/products/never-told-t-shirt-008-21.html"><img src="/assets/p21.png" alt="Never Told T-Shirt 008"></a><div>Never Told T-Shirt 008</div><div class="price">$25</div></div>
+<div class="card"><a href="/products/never-told-t-shirt-009-22.html"><img src="/assets/p22.png" alt="Never Told T-Shirt 009"></a><div>Never Told T-Shirt 009</div><div class="price">$25</div></div>
+<div class="card"><a href="/products/never-told-t-shirt-010-23.html"><img src="/assets/p23.png" alt="Never Told T-Shirt 010"></a><div>Never Told T-Shirt 010</div><div class="price">$25</div></div>
+<div class="card"><a href="/products/never-told-shorts-001-28.html"><img src="/assets/p28.png" alt="Never Told Shorts 001"></a><div>Never Told Shorts 001</div><div class="price">$65</div></div>
+<div class="card"><a href="/products/never-told-jeans-004-29.html"><img src="/assets/p29.png" alt="Never Told Jeans 004"></a><div>Never Told Jeans 004</div><div class="price">$100</div></div>
+<div class="card"><a href="/products/never-told-track-pants-001-32.html"><img src="/assets/p32.png" alt="Never Told Track Pants 001"></a><div>Never Told Track Pants 001</div><div class="price">$75</div></div>
+<div class="card"><a href="/products/never-told-track-jacket-001-33.html"><img src="/assets/p33.png" alt="Never Told Track Jacket 001"></a><div>Never Told Track Jacket 001</div><div class="price">$75</div></div>
+<div class="card"><a href="/products/never-told-hoodie-005-34.html"><img src="/assets/p34.png" alt="Never Told Hoodie 005"></a><div>Never Told Hoodie 005</div><div class="price">$75</div></div>
+<div class="card"><a href="/products/never-told-sweatpants-002-35.html"><img src="/assets/p35.png" alt="Never Told Sweatpants 002"></a><div>Never Told Sweatpants 002</div><div class="price">$35</div></div>
+<div class="card"><a href="/products/never-told-hoodie-006-36.html"><img src="/assets/p36.png" alt="Never Told Hoodie 006"></a><div>Never Told Hoodie 006</div><div class="price">$75</div></div>
+<div class="card"><a href="/products/never-told-hoodie-007-37.html"><img src="/assets/p37.png" alt="Never Told Hoodie 007"></a><div>Never Told Hoodie 007</div><div class="price">$75</div></div>
+<div class="card"><a href="/products/never-told-hoodie-008-38.html"><img src="/assets/p38.png" alt="Never Told Hoodie 008"></a><div>Never Told Hoodie 008</div><div class="price">$75</div></div>
+<div class="card"><a href="/products/never-told-hoodie-009-39.html"><img src="/assets/p39.png" alt="Never Told Hoodie 009"></a><div>Never Told Hoodie 009</div><div class="price">$75</div></div>
+<div class="card"><a href="/products/never-told-hoodie-010-41.html"><img src="/assets/p41.png" alt="Never Told Hoodie 010"></a><div>Never Told Hoodie 010</div><div class="price">$75</div></div>
+<div class="card"><a href="/products/never-told-hoodie-011-42.html"><img src="/assets/p42.png" alt="Never Told Hoodie 011"></a><div>Never Told Hoodie 011</div><div class="price">$75</div></div>
+<div class="card"><a href="/products/never-told-hoodie-012-44.html"><img src="/assets/p44.png" alt="Never Told Hoodie 012"></a><div>Never Told Hoodie 012</div><div class="price">$75</div></div>
+<div class="card"><a href="/products/never-told-track-jacket-002-45.html"><img src="/assets/p45.png" alt="Never Told Track Jacket 002"></a><div>Never Told Track Jacket 002</div><div class="price">$75</div></div>
+<div class="card"><a href="/products/never-told-hoodie-013-46.html"><img src="/assets/p46.png" alt="Never Told Hoodie 013"></a><div>Never Told Hoodie 013</div><div class="price">$75</div></div>
+<div class="card"><a href="/products/never-told-jeans-005-48.html"><img src="/assets/p48.png" alt="Never Told Jeans 005"></a><div>Never Told Jeans 005</div><div class="price">$100</div></div>
+<div class="card"><a href="/products/never-told-sweatpants-003-49.html"><img src="/assets/p49.png" alt="Never Told Sweatpants 003"></a><div>Never Told Sweatpants 003</div><div class="price">$35</div></div>
+<div class="card"><a href="/products/never-told-t-shirt-011-50.html"><img src="/assets/p50.png" alt="Never Told T-Shirt 011"></a><div>Never Told T-Shirt 011</div><div class="price">$25</div></div>
+<div class="card"><a href="/products/never-told-sweatpants-004-51.html"><img src="/assets/p51.png" alt="Never Told Sweatpants 004"></a><div>Never Told Sweatpants 004</div><div class="price">$35</div></div>
+<div class="card"><a href="/products/never-told-sweatpants-005-52.html"><img src="/assets/p52.png" alt="Never Told Sweatpants 005"></a><div>Never Told Sweatpants 005</div><div class="price">$35</div></div>
+<div class="card"><a href="/products/never-told-t-shirt-012-53.html"><img src="/assets/p53.png" alt="Never Told T-Shirt 012"></a><div>Never Told T-Shirt 012</div><div class="price">$25</div></div>
+<div class="card"><a href="/products/never-told-t-shirt-013-54.html"><img src="/assets/p54.png" alt="Never Told T-Shirt 013"></a><div>Never Told T-Shirt 013</div><div class="price">$25</div></div>
+<div class="card"><a href="/products/never-told-crewneck-002-56.html"><img src="/assets/p56.png" alt="Never Told Crewneck 002"></a><div>Never Told Crewneck 002</div><div class="price">$35</div></div>
+<div class="card"><a href="/products/never-told-hoodie-014-57.html"><img src="/assets/p57.png" alt="Never Told Hoodie 014"></a><div>Never Told Hoodie 014</div><div class="price">$75</div></div>
+<div class="card"><a href="/products/never-told-sweatpants-006-58.html"><img src="/assets/p58.png" alt="Never Told Sweatpants 006"></a><div>Never Told Sweatpants 006</div><div class="price">$35</div></div>
+<div class="card"><a href="/products/never-told-t-shirt-014-59.html"><img src="/assets/p59.png" alt="Never Told T-Shirt 014"></a><div>Never Told T-Shirt 014</div><div class="price">$25</div></div>
+<div class="card"><a href="/products/never-told-jacket-002-60.html"><img src="/assets/p60.png" alt="Never Told Jacket 002"></a><div>Never Told Jacket 002</div><div class="price">$100</div></div>
+<div class="card"><a href="/products/never-told-sweatpants-007-61.html"><img src="/assets/p61.png" alt="Never Told Sweatpants 007"></a><div>Never Told Sweatpants 007</div><div class="price">$35</div></div>
+<div class="card"><a href="/products/never-told-sweatpants-008-62.html"><img src="/assets/p62.png" alt="Never Told Sweatpants 008"></a><div>Never Told Sweatpants 008</div><div class="price">$35</div></div>
+<div class="card"><a href="/products/never-told-t-shirt-015-63.html"><img src="/assets/p63.png" alt="Never Told T-Shirt 015"></a><div>Never Told T-Shirt 015</div><div class="price">$25</div></div>
+<div class="card"><a href="/products/never-told-t-shirt-016-64.html"><img src="/assets/p64.png" alt="Never Told T-Shirt 016"></a><div>Never Told T-Shirt 016</div><div class="price">$25</div></div>
+<div class="card"><a href="/products/never-told-sweatpants-009-65.html"><img src="/assets/p65.png" alt="Never Told Sweatpants 009"></a><div>Never Told Sweatpants 009</div><div class="price">$35</div></div>
+<div class="card"><a href="/products/never-told-hoodie-015-66.html"><img src="/assets/p66.png" alt="Never Told Hoodie 015"></a><div>Never Told Hoodie 015</div><div class="price">$75</div></div>
+</div>
+</div>
+
+<h2>Canary Yellow — Limited Edition</h2>
+<div class="grid">
+<div class="card"><a href="/products/canary-yellow-sweatpants-001-24.html"><img src="/assets/p24.png" alt="Canary Yellow Sweatpants 001"></a><div>Canary Yellow Sweatpants 001</div><div class="price">$100</div><div><span class="le">LIMITED EDITION</span></div></div>
+<div class="card"><a href="/products/canary-yellow-t-shirt-001-25.html"><img src="/assets/p25.png" alt="Canary Yellow T-Shirt 001"></a><div>Canary Yellow T-Shirt 001</div><div class="price">$100</div><div><span class="le">LIMITED EDITION</span></div></div>
+<div class="card"><a href="/products/canary-yellow-sweatpants-002-26.html"><img src="/assets/p26.png" alt="Canary Yellow Sweatpants 002"></a><div>Canary Yellow Sweatpants 002</div><div class="price">$100</div><div><span class="le">LIMITED EDITION</span></div></div>
+<div class="card"><a href="/products/canary-yellow-hoodie-001-27.html"><img src="/assets/p27.png" alt="Canary Yellow Hoodie 001"></a><div>Canary Yellow Hoodie 001</div><div class="price">$100</div><div><span class="le">LIMITED EDITION</span></div></div>
+<div class="card"><a href="/products/canary-yellow-hoodie-002-30.html"><img src="/assets/p30.png" alt="Canary Yellow Hoodie 002"></a><div>Canary Yellow Hoodie 002</div><div class="price">$100</div><div><span class="le">LIMITED EDITION</span></div></div>
+<div class="card"><a href="/products/canary-yellow-t-shirt-002-31.html"><img src="/assets/p31.png" alt="Canary Yellow T-Shirt 002"></a><div>Canary Yellow T-Shirt 002</div><div class="price">$100</div><div><span class="le">LIMITED EDITION</span></div></div>
+<div class="card"><a href="/products/canary-yellow-hoodie-003-40.html"><img src="/assets/p40.png" alt="Canary Yellow Hoodie 003"></a><div>Canary Yellow Hoodie 003</div><div class="price">$100</div><div><span class="le">LIMITED EDITION</span></div></div>
+<div class="card"><a href="/products/canary-yellow-hoodie-004-43.html"><img src="/assets/p43.png" alt="Canary Yellow Hoodie 004"></a><div>Canary Yellow Hoodie 004</div><div class="price">$100</div><div><span class="le">LIMITED EDITION</span></div></div>
+<div class="card"><a href="/products/canary-yellow-shorts-001-47.html"><img src="/assets/p47.png" alt="Canary Yellow Shorts 001"></a><div>Canary Yellow Shorts 001</div><div class="price">$100</div><div><span class="le">LIMITED EDITION</span></div></div>
+<div class="card"><a href="/products/canary-yellow-jeans-001-55.html"><img src="/assets/p55.png" alt="Canary Yellow Jeans 001"></a><div>Canary Yellow Jeans 001</div><div class="price">$100</div><div><span class="le">LIMITED EDITION</span></div></div>
+</div>
+<!-- nt-footer-v1 -->
+<footer class="nt-footer">
+<div class="nt-foot-brand">NEVER TOLD</div>
+<div>nevertold.life</div>
+<div class="nt-foot-links">
+<a href="/">Home</a> · <a href="/shop.html">Shop All</a> · <a href="/category/canary-yellow.html">Canary Yellow — Limited Edition</a> · <a href="/#shipping">Shipping</a>
+</div>
+<div class="small">A Gray Code Enterprise brand · <a href="https://graycodeenterprise.net">graycodeenterprise.net</a></div>
+</footer>
+<!-- shipping-details-v1 -->
+<div class="shipping-details" style="max-width:720px;margin:32px auto;padding:20px 24px;border:1px solid #444;border-radius:10px;text-align:left">
+<h2 style="margin-top:0">Shipping</h2>
+<p>Pick your speed at checkout.</p>
+<ul style="line-height:1.9">
+<li><strong>Special Line &mdash; $5</strong> &mdash; 10d avg; 95% in 15d</li>
+<li><strong>Special Line Pro &mdash; $10</strong> &mdash; 7d avg; 95% in 10d</li>
+<li><strong>International Express &mdash; $15</strong> &mdash; 5d avg; 95% in 7d</li>
+</ul>
+<p class="small">Shipping details from Tapstitch: These shipping times are estimates, not guarantees, and do not include the production time of POD products. Every piece is printed to order, then shipped with tracking.</p>
+</div>
+
+</body></html>
