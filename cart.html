@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cart — NEVER TOLD</title><link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&family=Rubik+Wet+Paint&family=Permanent+Marker&display=swap" rel="stylesheet"><style>body{background:#0b0b0b;color:#f2f2f2;font-family:Arial,Helvetica,sans-serif;margin:0}header{padding:28px 20px;text-align:center;border-bottom:2px solid #c9a227}h1{font-family:Anton,Arial;letter-spacing:.06em;color:#c9a227;margin:0;font-size:42px}.sub{color:#bbb;margin-top:6px}.wrap{max-width:1100px;margin:0 auto;padding:24px 16px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px}.card{background:#161616;border:1px solid #2c2c2c;border-radius:10px;padding:14px;text-align:center}.card img{width:100%;height:200px;object-fit:contain;background:#fff;border-radius:6px}.price{color:#c9a227;font-size:20px;font-weight:bold}a{color:#c9a227}.btn{display:inline-block;background:#c9a227;color:#000;padding:12px 26px;border-radius:6px;text-decoration:none;font-weight:bold;margin-top:14px}.cat-link{display:block;background:#161616;border:1px solid #2c2c2c;border-radius:10px;padding:18px;margin:10px 0;color:#f2f2f2;text-decoration:none;font-size:20px}.cat-count{color:#999;font-size:14px}.back{color:#999}.small{color:#888;font-size:13px}.opt-label{margin:16px 0 8px;color:#bbb}.opts{display:flex;flex-wrap:wrap;gap:8px}.opt{background:#161616;color:#f2f2f2;border:1px solid #444;border-radius:20px;padding:8px 16px;cursor:pointer;font-size:15px}.opt.on{background:#c9a227;color:#000;border-color:#c9a227;font-weight:bold}.le{display:inline-block;background:#c9a227;color:#000;font-weight:bold;font-size:12px;letter-spacing:.08em;border-radius:4px;padding:3px 10px;margin-top:8px}.hero{position:relative;background:#000;text-align:center;padding:38px 18px;border-radius:12px;margin-bottom:26px;overflow:hidden;border:2px solid #c9a227}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 34px,rgba(120,120,120,.55) 34px 42px,rgba(30,30,30,.9) 42px 46px);pointer-events:none}
+.hero>*{position:relative}
+.hero .big{font-family:'Rubik Wet Paint','Permanent Marker',cursive;font-size:clamp(30px,5vw,42px);line-height:1.1;letter-spacing:.03em;margin:0;transform:rotate(-2deg);color:#ffd83d;-webkit-text-stroke:2px #000;paint-order:stroke fill;text-shadow:3px 3px 0 #000,-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000,6px 6px 0 rgba(0,0,0,.8)}
+.hero:after{content:"";position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(circle,rgba(255,216,61,.5) 1.5px,transparent 2px),radial-gradient(circle,rgba(255,216,61,.35) 1px,transparent 1.6px),radial-gradient(circle,rgba(255,255,255,.28) 1px,transparent 1.6px);background-size:130px 90px,90px 70px,70px 110px;background-position:10px 8px,40px 30px,75px 12px}
+.hero .name{font-size:31px;font-weight:bold;margin:12px 0 2px;color:#fff;text-shadow:2px 2px 0 #000}
+.hero .price{font-size:22px;font-weight:bold;color:#ffd83d;text-shadow:2px 2px 0 #000}
+.hero .btn{background:#c9a227;color:#000;margin-top:12px;border:2px solid #000}.hero img.bis{width:100%;height:auto;display:block;border-radius:8px}.hero img.hood{display:block;margin:14px auto 2px;height:280px;width:auto}.hero{background:#fff;border-color:#c9a227}.hero:before{display:none}.hero:after{display:none}.hero .name{color:#000;text-shadow:none}.hero .price{color:#b8912a;text-shadow:none}.hero{max-width:940px;margin:0 auto 26px}.hero .hero-row{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap}.hero .hero-row>img.bis{width:64%;height:auto}.hero .hero-row>img.hood{height:285px;width:auto;margin:0}</style><style>/* nt-clean-v1 */
+.nt-nav{display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:center;padding:14px 16px;background:#111;border-bottom:1px solid #2c2c2c}
+.nt-nav a{color:#f2f2f2;text-decoration:none;font-weight:bold;font-size:15px;letter-spacing:.03em}
+.nt-nav a:hover{color:#c9a227}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.tile{background:#161616;border:1px solid #2c2c2c;border-radius:10px;padding:14px;text-align:center;text-decoration:none;color:#f2f2f2;display:block}
+.tile img{width:100%;height:190px;object-fit:contain;background:#fff;border-radius:6px}
+.tile .tname{font-size:19px;font-weight:bold;margin-top:10px}
+.tile .tcount{color:#999;font-size:14px}
+.nt-footer{border-top:2px solid #c9a227;margin-top:44px;padding:26px 16px 34px;text-align:center;color:#bbb}
+.nt-footer .nt-foot-brand{font-family:Anton,Arial;letter-spacing:.06em;color:#c9a227;font-size:24px}
+.nt-foot-links{margin:10px 0}
+.nt-foot-links a{color:#c9a227}
+</style><style>/* nt-ow-v2 — deepened minimal editorial: bigger imagery, more white space, quiet type */
+body{background:#fff;color:#000;font-family:Arial,Helvetica,sans-serif}
+header{padding:26px 24px 18px;text-align:left;border-bottom:1px solid #000}
+header h1{font-family:Anton,Arial;color:#000;font-size:24px;letter-spacing:.18em;margin:0}
+.sub{color:#666}.wrap{max-width:1280px;padding:64px 24px 80px}
+.nt-nav{background:#fff;justify-content:flex-start;padding:16px 24px;border-bottom:1px solid #e5e5e5;gap:10px 30px}
+.nt-nav a{color:#000;font-size:12px;font-weight:normal;letter-spacing:.16em;text-transform:uppercase}
+.nt-nav a:hover{color:#000;text-decoration:underline}
+.grid{grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:72px 32px}
+.card{background:#fff;border:none;border-radius:0;padding:0;text-align:left;font-size:15px;line-height:1.5}
+.card img{height:320px;background:#fff;border-radius:0;margin-bottom:14px}
+.card .price{font-size:15px;color:#555;margin-top:4px}
+.tile{background:#fff;border:none;border-radius:0;padding:0;text-align:left;color:#000}
+.tile img{height:400px;background:#f7f7f7;border-radius:0;margin-bottom:12px}
+.tile .tname{font-size:16px;letter-spacing:.02em}.tile .tcount{color:#666;font-size:13px}
+.tiles{gap:64px 32px}
+.price{color:#000;font-size:16px;font-weight:normal;letter-spacing:.06em}
+a{color:#000}
+.btn{background:#000;color:#fff;border-radius:0;letter-spacing:.14em;text-transform:uppercase;padding:16px 42px;font-size:12px}
+.cat-link{background:#fff;border:none;border-bottom:1px solid #e5e5e5;border-radius:0;color:#000}
+.cat-count{color:#666}.back{color:#666;font-size:13px;letter-spacing:.08em;text-transform:uppercase}.small{color:#666}
+.opt{background:#fff;color:#000;border:1px solid #000;border-radius:0;padding:10px 18px}
+.opt.on{background:#000;color:#fff;border-color:#000}
+.opt-label{color:#666;font-size:11px;letter-spacing:.2em;text-transform:uppercase;margin:28px 0 10px}
+.le{background:#000;color:#fff;border-radius:0}
+.hero{background:#fff;border:1px solid #000;border-radius:0}
+.hero .btn{background:#000;color:#fff;border:none}
+.nt-footer{background:#fff;border-top:1px solid #000;color:#000;padding:56px 24px 48px}
+.nt-footer .nt-foot-brand{color:#000;font-size:20px}
+.nt-foot-links a{color:#000}
+.wrap>img{width:min(760px,100%)!important;height:auto!important;background:#f7f7f7!important;border-radius:0!important}
+#ss-hoodie,#ss-pants{width:min(520px,46%)!important;height:auto!important;border-radius:0!important}
+h2{letter-spacing:.03em;font-size:32px;font-weight:normal;margin:0 0 18px}
+h3{letter-spacing:.03em;font-weight:normal}
+</style>
+</head><body><header><h1>NEVER TOLD</h1><div class="sub">nevertold.life</div></header>
+<!-- nt-nav-v1 -->
+<nav class="nt-nav">
+<a href="/">Home</a>
+<a href="/shop.html">Shop All</a>
+<a href="/category/hoodies.html">Hoodies</a>
+<a href="/category/t-shirts.html">T-Shirts</a>
+<a href="/category/sweatpants.html">Sweatpants</a>
+<a href="/category/jeans.html">Jeans</a>
+<a href="/category/canary-yellow.html">Canary Yellow</a>
+<a href="/shipping.html">Shipping</a>
+</nav>
+<div class="wrap">
+<h2>Cart</h2>
+<div id="nt-cart-empty" style="display:none">
+<p>Your cart is empty</p>
+<p><a href="/shop.html">Shop all products &rarr;</a></p>
+</div>
+<div id="nt-cart-items"></div>
+<div id="nt-cart-summary" style="display:none">
+<h3 style="margin-top:36px">Shipping</h3>
+<label class="nt-shipopt"><input type="radio" name="nt-ship" value="special" checked>Special Line &mdash; $5 &mdash; 10d avg; 95% in 15d</label>
+<label class="nt-shipopt"><input type="radio" name="nt-ship" value="pro">Special Line Pro &mdash; $10 &mdash; 7d avg; 95% in 10d</label>
+<label class="nt-shipopt"><input type="radio" name="nt-ship" value="express">International Express &mdash; $15 &mdash; 5d avg; 95% in 7d</label>
+<div class="nt-totrow"><span>Subtotal</span><span id="nt-subtotal">$0</span></div>
+<div class="nt-totrow"><span>Shipping</span><span id="nt-shipcost">$5</span></div>
+<div class="nt-totrow nt-grand"><span>Total</span><span id="nt-total">$5</span></div>
+<div id="nt-checkout-msg"></div>
+<p><button type="button" class="btn" id="nt-checkout" style="border:none;cursor:pointer">Checkout</button></p>
+<p class="small">Shipping times are estimates, not guarantees, and do not include production time. Every piece is printed to order, then shipped with tracking.</p>
+</div>
+</div>
+<!-- nt-footer-v1 -->
+<footer class="nt-footer">
+<div class="nt-foot-brand">NEVER TOLD</div>
+<div>nevertold.life</div>
+<div class="nt-foot-links">
+<a href="/">Home</a> · <a href="/shop.html">Shop All</a> · <a href="/category/canary-yellow.html">Canary Yellow — Limited Edition</a> · <a href="/shipping.html">Shipping</a>
+</div>
+<div class="small">A Gray Code Enterprise brand · <a href="https://graycodeenterprise.net">graycodeenterprise.net</a></div>
+</footer>
+<script src="/assets/cart.js" defer></script>
+</body></html>
