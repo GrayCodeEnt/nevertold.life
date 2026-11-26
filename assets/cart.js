@@ -177,7 +177,7 @@ function ntInjectNavLink() {
   const nav = document.querySelector(".nt-nav");
   if (!nav || document.getElementById("nt-cart-link")) { return; }
   const a = document.createElement("a");
-  a.href = "/cart.html";
+  a.href = "/cart";
   a.id = "nt-cart-link";
   a.className = "nt-cartlink";
   a.textContent = "Cart (" + cartCount() + ")";
@@ -288,7 +288,7 @@ function ntInitProductPage() {
       btn.style.marginRight = "12px";
       const added = document.createElement("span");
       added.className = "nt-added";
-      added.innerHTML = 'Added &mdash; <a href="/cart.html">View cart</a>';
+      added.innerHTML = 'Added &mdash; <a href="/cart">View cart</a>';
       btn.addEventListener("click", function () {
         const size = guardSize();
         if (!size) { return; }
@@ -314,7 +314,7 @@ function ntInitProductPage() {
   btn.style.marginRight = "12px";
   const added = document.createElement("span");
   added.className = "nt-added";
-  added.innerHTML = 'Added &mdash; <a href="/cart.html">View cart</a>';
+  added.innerHTML = 'Added &mdash; <a href="/cart">View cart</a>';
   btn.addEventListener("click", function () {
     const size = chosenSize();
     if (size === null && ntSelectedOpt("size") === null) {
