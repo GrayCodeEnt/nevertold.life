@@ -21,10 +21,10 @@ header h1{font-family:Anton,Arial;color:#000;font-size:24px;letter-spacing:.18em
 .nt-nav a:hover{color:#000;text-decoration:underline}
 .grid{grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:72px 32px}
 .card{background:#fff;border:none;border-radius:0;padding:0;text-align:left;font-size:15px;line-height:1.5}
-.card img{height:460px;background:#f7f7f7;border-radius:0;margin-bottom:14px}
+.card img{height:320px;background:#fff;border-radius:0;margin-bottom:14px}
 .card .price{font-size:15px;color:#555;margin-top:4px}
 .tile{background:#fff;border:none;border-radius:0;padding:0;text-align:left;color:#000}
-.tile img{height:400px;background:#f7f7f7;border-radius:0;margin-bottom:12px}
+.tile img{height:320px;background:#fff;border-radius:0;margin-bottom:12px}
 .tile .tname{font-size:16px;letter-spacing:.02em}.tile .tcount{color:#666;font-size:13px}
 .tiles{gap:64px 32px}
 .price{color:#000;font-size:16px;font-weight:normal;letter-spacing:.06em}
@@ -41,15 +41,10 @@ a{color:#000}
 .nt-footer{background:#fff;border-top:1px solid #000;color:#000;padding:56px 24px 48px}
 .nt-footer .nt-foot-brand{color:#000;font-size:20px}
 .nt-foot-links a{color:#000}
-.shipping-details{border:1px solid #e5e5e5!important;border-radius:0!important}
-.wrap>img{width:min(760px,100%)!important;height:auto!important;background:#f7f7f7!important;border-radius:0!important}
+.wrap>img{width:min(760px,100%)!important;height:520px!important;object-fit:contain;background:#fff!important;border-radius:0!important}
 #ss-hoodie,#ss-pants{width:min(520px,46%)!important;height:auto!important;border-radius:0!important}
 h2{letter-spacing:.03em;font-size:32px;font-weight:normal;margin:0 0 18px}
 h3{letter-spacing:.03em;font-weight:normal}
-</style>
-<style id="nt-mobile-fix">/* nt-mobile-fix — square mockups, fewer columns on phones */
-@media (max-width:700px){.band .grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.pairs{grid-template-columns:repeat(2,minmax(0,1fr))!important}.grid[style]{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
-@media (max-width:430px){.band .grid{grid-template-columns:1fr!important}.pairs{grid-template-columns:1fr!important}.grid[style]{grid-template-columns:1fr!important}}
 </style>
 </head><body><header><h1>NEVER TOLD</h1><div class="sub">nevertold.life</div></header>
 <!-- nt-nav-v1 -->
@@ -60,8 +55,9 @@ h3{letter-spacing:.03em;font-weight:normal}
 <a href="/category/t-shirts.html">T-Shirts</a>
 <a href="/category/sweatpants.html">Sweatpants</a>
 <a href="/category/jeans.html">Jeans</a>
+<a href="/category/sets.html">Sets</a>
 <a href="/category/canary-yellow.html">Canary Yellow</a>
-<a href="/#shipping">Shipping</a>
+<a href="/shipping.html">Shipping</a>
 </nav>
 <div class="wrap">
 <p><a class="back" href="/shop.html">&larr; Shop All</a></p>
@@ -124,20 +120,10 @@ document.querySelectorAll('.opts').forEach(g=>{g.querySelectorAll('.opt').forEac
 <div class="nt-foot-brand">NEVER TOLD</div>
 <div>nevertold.life</div>
 <div class="nt-foot-links">
-<a href="/">Home</a> · <a href="/shop.html">Shop All</a> · <a href="/category/canary-yellow.html">Canary Yellow — Limited Edition</a> · <a href="/#shipping">Shipping</a>
+<a href="/">Home</a> · <a href="/shop.html">Shop All</a> · <a href="/category/canary-yellow.html">Canary Yellow — Limited Edition</a> · <a href="/shipping.html">Shipping</a>
 </div>
 <div class="small">A Gray Code Enterprise brand · <a href="https://graycodeenterprise.net">graycodeenterprise.net</a></div>
 </footer>
-<!-- shipping-details-v1 -->
-<div class="shipping-details" style="max-width:720px;margin:32px auto;padding:20px 24px;border:1px solid #444;border-radius:10px;text-align:left">
-<h2 style="margin-top:0">Shipping</h2>
-<p>Pick your speed at checkout.</p>
-<ul style="line-height:1.9">
-<li><strong>Special Line &mdash; $5</strong> &mdash; 10d avg; 95% in 15d</li>
-<li><strong>Special Line Pro &mdash; $10</strong> &mdash; 7d avg; 95% in 10d</li>
-<li><strong>International Express &mdash; $15</strong> &mdash; 5d avg; 95% in 7d</li>
-</ul>
-<p class="small">Shipping details from Tapstitch: These shipping times are estimates, not guarantees, and do not include the production time of POD products. Every piece is printed to order, then shipped with tracking.</p>
-</div>
-
+<script>window.NT_PRODUCT={"slug": "never-told-sweatsuit-set", "sweatsuit": true, "pieces": {"hoodie": {"slug": "never-told-sweatsuit-hoodie", "name": "Never Told Sweatsuit Hoodie", "price_cents": 5000, "image": "/assets/sweatsuit-hoodie-black.jpg"}, "pants": {"slug": "never-told-sweatsuit-pants", "name": "Never Told Sweatsuit Sweatpants", "price_cents": 5000, "image": "/assets/sweatsuit-pants-black.jpg"}}};</script>
+<script src="/assets/cart.js" defer></script>
 </body></html>
