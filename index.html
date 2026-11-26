@@ -14,6 +14,7 @@ header h1{font-family:Anton,Arial;color:#000;font-size:24px;letter-spacing:.18em
 .nt-nav{background:#fff;justify-content:flex-start;padding:16px 24px;border-bottom:1px solid #e5e5e5;gap:10px 30px}
 .nt-nav a{color:#000;font-size:12px;font-weight:normal;letter-spacing:.16em;text-transform:uppercase;text-decoration:none}
 .nt-nav a:hover{color:#000;text-decoration:underline}
+.nt-nav a:not(:first-child)::before{content:"\2022";margin:0 12px 0 -18px;color:#888}
 .grid{grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:72px 32px}
 .card{background:#fff;border:none;border-radius:0;padding:0;text-align:left;font-size:15px;line-height:1.5}
 .card img{height:320px;background:#fff;border-radius:0;margin-bottom:14px}
@@ -70,6 +71,13 @@ h3{letter-spacing:.03em;font-weight:normal}
 .band-y p a{color:#000}
 .band .grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 .band h2{margin-top:0!important} .nt-about{padding:72px 24px;text-align:center} .nt-about h2{font-family:Anton,Arial,sans-serif;font-size:clamp(38px,6vw,64px);letter-spacing:.06em;font-weight:400;margin:0 0 36px;text-align:center} .nt-about p{max-width:700px;margin:0 auto;font-size:clamp(24px,3.4vw,40px);line-height:1.5;font-weight:700;text-align:center} .nt-about .about-line{display:block;margin-bottom:.45em} .nt-about .about-line:last-child{margin-bottom:0}
+.nt-top-split{display:flex;align-items:stretch}
+.nt-top-split .nt-about{flex:1 1 50%;margin:0;display:flex;flex-direction:column;justify-content:center}
+.nt-top-split .nt-about h2{font-size:clamp(30px,4vw,48px)}
+.nt-top-split .nt-about p{font-size:clamp(20px,2.4vw,30px)}
+.nt-top-split .hero-v3{flex:1 1 50%;margin:0;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.nt-top-split .hero-v3 .spin-scene{width:min(520px,100%)}
+@media (max-width:760px){.nt-top-split{flex-direction:column}}
 </style>
 </head><body><header><h1>NEVER TOLD</h1><div class="sub">nevertold.life</div></header>
 <!-- nt-nav-v1 -->
@@ -90,6 +98,7 @@ h3{letter-spacing:.03em;font-weight:normal}
 <a href="/shipping">Shipping</a>
 </nav>
 <div class="wrap">
+<div class="nt-top-split">
 <!-- nt-about-v1 --><section class="band band-b nt-about"><h2>ABOUT NEVER TOLD</h2><p><span class="about-line">Never Told represents</span><span class="about-line">the voice of the unheard.</span><span class="about-line">We stand for <span style="color:#ff0000">truth</span>, <span style="color:#ff0000">loyalty</span>,</span><span class="about-line"><span style="color:#ff0000">self-discipline</span>, and <span style="color:#ff0000">purpose</span>.</span><span class="about-line">This isn't just clothing.</span><span class="about-line">It's a movement.</span></p></section><!-- nt-hero-v3 -->
 <div class="hero-v3">
 <img class="hero-v3-bis" src="/assets/back-in-stock-clear.webp" alt="BACK IN STOCK">
@@ -99,7 +108,7 @@ h3{letter-spacing:.03em;font-weight:normal}
 <img class="spin-face spin-back" src="/assets/original-hoodie-back.webp" alt="The Never Told Original Hoodie — back">
 </div>
 </div>
-<p class="name">The Never Told Original Hoodie</p><p class="price">$50</p><a class="btn" href="/products/never-told-hoodie-original-67">Shop Now</a></div>
+<p class="name">The Never Told Original Hoodie</p><p class="price">$50</p><a class="btn" href="/products/never-told-hoodie-original-67">Shop Now</a></div></div>
 <!-- nt-home-cat3-v1 -->
 <section class="band band-y"><h2 style="margin-top:34px"><a href="/category/canary-yellow" style="color:inherit;text-decoration:none">Canary Yellow — Limited Edition</a></h2><div class="grid"><div class="card"><a href="/products/canary-yellow-sweatpants-001-24"><img src="/assets/p24.webp" alt="Canary Yellow Sweatpants 001"></a><div>Canary Yellow Sweatpants 001</div><div class="price">$100</div><div><span class="le">LIMITED EDITION</span></div></div><div class="card"><a href="/products/canary-yellow-t-shirt-001-25"><img src="/assets/p25.webp" alt="Canary Yellow T-Shirt 001"></a><div>Canary Yellow T-Shirt 001</div><div class="price">$100</div><div><span class="le">LIMITED EDITION</span></div></div><div class="card"><a href="/products/canary-yellow-sweatpants-002-26"><img src="/assets/p26.webp" alt="Canary Yellow Sweatpants 002"></a><div>Canary Yellow Sweatpants 002</div><div class="price">$100</div><div><span class="le">LIMITED EDITION</span></div></div><div class="card"><a href="/products/canary-yellow-hoodie-005-70"><img src="/assets/p70.webp" alt="Canary Yellow Hoodie 005"></a><div>Canary Yellow Hoodie 005</div><div class="price">$100</div></div><div class="card"><a href="/products/canary-yellow-bomber-jacket-001-72"><img src="/assets/p72.webp" alt="Canary Yellow Bomber Jacket 001"></a><div>Canary Yellow Bomber Jacket 001</div><div class="price">$100</div></div><div class="card"><a href="/products/canary-yellow-shirt-001-73"><img src="/assets/p73.webp" alt="Canary Yellow Shirt 001"></a><div>Canary Yellow Shirt 001</div><div class="price">$100</div></div><div class="card"><a href="/products/canary-yellow-hoodie-006-74"><img src="/assets/p74.webp" alt="Canary Yellow Hoodie 006"></a><div>Canary Yellow Hoodie 006</div><div class="price">$100</div></div><div class="card"><a href="/products/canary-yellow-tank-top-001-75"><img src="/assets/p75.webp" alt="Canary Yellow Tank Top 001"></a><div>Canary Yellow Tank Top 001</div><div class="price">$100</div></div></div><p style="margin-top:12px"><a href="/category/canary-yellow">View all Canary Yellow — Limited Edition →</a></p></section>
 <section class="band band-w"><h2 style="margin-top:34px"><a href="/category/crewnecks" style="color:inherit;text-decoration:none">Crewnecks</a></h2><div class="grid"><div class="card"><a href="/products/never-told-crewneck-001-5"><img src="/assets/p05.webp" alt="Never Told Crewneck 001"></a><div>Never Told Crewneck 001</div><div class="price">$35</div></div><div class="card"><a href="/products/never-told-crewneck-002-56"><img src="/assets/p56.webp" alt="Never Told Crewneck 002"></a><div>Never Told Crewneck 002</div><div class="price">$35</div></div></div><p style="margin-top:12px"><a href="/category/crewnecks">View all Crewnecks →</a></p></section>
