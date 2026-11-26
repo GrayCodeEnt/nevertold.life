@@ -47,6 +47,11 @@ a{color:#000}
 h2{letter-spacing:.03em;font-size:32px;font-weight:normal;margin:0 0 18px}
 h3{letter-spacing:.03em;font-weight:normal}
 </style>
+<style>/* ss-sections-v1 */
+.ss-piece{margin:36px 0 8px;padding-top:28px;border-top:1px solid #e5e5e5}
+.ss-piece h3{font-size:24px;margin:0 0 16px}
+.ss-buyarea{margin-top:18px}
+</style>
 </head><body><header><h1>NEVER TOLD</h1><div class="sub">nevertold.life</div></header>
 <!-- nt-nav-v1 -->
 <nav class="nt-nav">
@@ -68,10 +73,6 @@ h3{letter-spacing:.03em;font-weight:normal}
 <div class="wrap">
 <p><a class="back" href="/shop">&larr; Shop All</a></p>
 <h2>Never Told Sweatsuit Set</h2>
-<div style="display:flex;gap:18px;flex-wrap:wrap">
-<img id="ss-hoodie" src="/assets/sweatsuit-hoodie-black.webp" alt="Never Told Sweatsuit Hoodie" style="width:320px;height:320px;object-fit:contain;background:#fff;border-radius:8px">
-<img id="ss-pants" src="/assets/sweatsuit-pants-black.webp" alt="Never Told Sweatsuit Sweatpants" style="width:320px;height:320px;object-fit:contain;background:#fff;border-radius:8px">
-</div>
 <p class="price">Hoodie $50 &nbsp;·&nbsp; Sweatpants $50 &nbsp;·&nbsp; Full set $100</p>
 <div class="opt-label">Color — <span id="ss-colorname">Black</span></div>
 <div class="opts" id="ss-colors">
@@ -92,6 +93,22 @@ h3{letter-spacing:.03em;font-weight:normal}
 </div>
 <div class="opt-label">Size</div>
 <div class="opts"><button class="opt">S</button><button class="opt">M</button><button class="opt">L</button><button class="opt">XL</button><button class="opt">2XL</button></div>
+<p>Pick your color above — the pictures show that color's hoodie and pants. Buy the hoodie, the pants, or the full set.</p>
+<p class="small">One color, one size, one quantity for both pieces &mdash; pick your color and size above, then add the hoodie, the pants, or both.</p>
+<div class="ss-piece">
+<h3>Hoodie &mdash; $50</h3>
+<img id="ss-hoodie" src="/assets/sweatsuit-hoodie-black.webp" alt="Never Told Sweatsuit Hoodie" style="width:320px;height:320px;object-fit:contain;background:#fff;border-radius:8px">
+<div class="ss-buyarea">
+<a class="btn" id="ss-buy-hoodie" href="https://buy.stripe.com/bJeaEZ8VTaoEeul34k1Jm17">Buy the Hoodie — $50</a>
+</div>
+</div>
+<div class="ss-piece">
+<h3>Sweatpants &mdash; $50</h3>
+<img id="ss-pants" src="/assets/sweatsuit-pants-black.webp" alt="Never Told Sweatsuit Sweatpants" style="width:320px;height:320px;object-fit:contain;background:#fff;border-radius:8px">
+<div class="ss-buyarea">
+<a class="btn" id="ss-buy-pants" href="https://buy.stripe.com/aFafZj8VT0O4cmd34k1Jm18">Buy the Sweatpants — $50</a>
+</div>
+</div>
 <h3>Product details</h3>
 <p>The NEVER TOLD sweatsuit set: a vintage wash boxy fleece hoodie with matching barrel leg fleece sweatpants. The small white NEVER TOLD wordmark sits on the right chest of the hoodie and at the bottom of the right leg of the pants — the same logo, the same spot, on every color.</p>
 <ul style="line-height:1.9;text-align:left">
@@ -104,9 +121,7 @@ h3{letter-spacing:.03em;font-weight:normal}
 <li><strong>Included:</strong> NEVER TOLD inside label and hang tag on every piece</li>
 <li><strong>Made to order:</strong> every piece is printed to order, then shipped with tracking</li>
 </ul>
-<p>Pick your color above — the pictures show that color's hoodie and pants. Buy the hoodie, the pants, or the full set.</p>
-<a class="btn" id="ss-buy-hoodie" href="https://buy.stripe.com/bJeaEZ8VTaoEeul34k1Jm17">Buy the Hoodie — $50</a>
-<a class="btn" id="ss-buy-pants" href="https://buy.stripe.com/aFafZj8VT0O4cmd34k1Jm18">Buy the Sweatpants — $50</a>
+
 <p class="small">Tapstitch products: Unisex Vintage Wash Boxy Fleece Hoodie / Unisex Vintage Wash Barrel Leg Fleece Sweatpants</p>
 <script>
 var names={"black":"Black","washed-blue":"Washed Blue","navy-blue":"Navy Blue","dark-green":"Dark Green","purple":"Purple","rose-red":"Rose Red","washed-red":"Washed Red","washed-green":"Washed Green","light-gray":"Light Gray","light-yellow":"Light Yellow","light-pink":"Light Pink","pink":"Pink","light-blue":"Light Blue","mint-green":"Mint Green"};
