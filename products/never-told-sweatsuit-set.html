@@ -50,26 +50,26 @@ h3{letter-spacing:.03em;font-weight:normal}
 <!-- nt-nav-v1 -->
 <nav class="nt-nav">
 <a href="/">Home</a>
-<a href="/shop.html">Shop All</a>
-<a href="/category/hoodies.html">Hoodies</a>
+<a href="/shop">Shop All</a>
+<a href="/category/hoodies">Hoodies</a>
 <a href="/category/jackets">Jackets</a>
-<a href="/category/t-shirts.html">T-Shirts</a>
-<a href="/category/sweatpants.html">Sweatpants</a>
-<a href="/category/jeans.html">Jeans</a>
+<a href="/category/t-shirts">T-Shirts</a>
+<a href="/category/sweatpants">Sweatpants</a>
+<a href="/category/jeans">Jeans</a>
 <a href="/category/shorts">Shorts</a>
 <a href="/category/crewnecks">Crewnecks</a>
 <a href="/category/quarter-zips">Quarter-Zips</a>
 <a href="/category/tracksuits">Tracksuits</a>
-<a href="/category/sets.html">Sets</a>
-<a href="/category/canary-yellow.html">Canary Yellow</a>
-<a href="/shipping.html">Shipping</a>
+<a href="/category/sets">Sets</a>
+<a href="/category/canary-yellow">Canary Yellow</a>
+<a href="/shipping">Shipping</a>
 </nav>
 <div class="wrap">
-<p><a class="back" href="/shop.html">&larr; Shop All</a></p>
+<p><a class="back" href="/shop">&larr; Shop All</a></p>
 <h2>Never Told Sweatsuit Set</h2>
 <div style="display:flex;gap:18px;flex-wrap:wrap">
-<img id="ss-hoodie" src="/assets/sweatsuit-hoodie-black.jpg" alt="Never Told Sweatsuit Hoodie" style="width:320px;height:320px;object-fit:contain;background:#fff;border-radius:8px">
-<img id="ss-pants" src="/assets/sweatsuit-pants-black.jpg" alt="Never Told Sweatsuit Sweatpants" style="width:320px;height:320px;object-fit:contain;background:#fff;border-radius:8px">
+<img id="ss-hoodie" src="/assets/sweatsuit-hoodie-black.webp" alt="Never Told Sweatsuit Hoodie" style="width:320px;height:320px;object-fit:contain;background:#fff;border-radius:8px">
+<img id="ss-pants" src="/assets/sweatsuit-pants-black.webp" alt="Never Told Sweatsuit Sweatpants" style="width:320px;height:320px;object-fit:contain;background:#fff;border-radius:8px">
 </div>
 <p class="price">Hoodie $50 &nbsp;·&nbsp; Sweatpants $50 &nbsp;·&nbsp; Full set $100</p>
 <div class="opt-label">Color — <span id="ss-colorname">Black</span></div>
@@ -113,8 +113,8 @@ document.querySelectorAll('#ss-colors .opt').forEach(function(b){b.onclick=funct
 document.querySelectorAll('#ss-colors .opt').forEach(function(x){x.classList.remove('on');});
 b.classList.add('on');
 var c=b.getAttribute('data-c');
-document.getElementById('ss-hoodie').src='/assets/sweatsuit-hoodie-'+c+'.jpg';
-document.getElementById('ss-pants').src='/assets/sweatsuit-pants-'+c+'.jpg';
+document.getElementById('ss-hoodie').src='/assets/sweatsuit-hoodie-'+c+'.webp';
+document.getElementById('ss-pants').src='/assets/sweatsuit-pants-'+c+'.webp';
 document.getElementById('ss-colorname').textContent=names[c];
 };});
 document.querySelectorAll('.opts').forEach(g=>{g.querySelectorAll('.opt').forEach(b=>{if(g.id!=='ss-colors'){b.onclick=()=>{g.querySelectorAll('.opt').forEach(x=>x.classList.remove('on'));b.classList.add('on');};}});});
@@ -125,10 +125,10 @@ document.querySelectorAll('.opts').forEach(g=>{g.querySelectorAll('.opt').forEac
 <div class="nt-foot-brand">NEVER TOLD</div>
 <div>nevertold.life</div>
 <div class="nt-foot-links">
-<a href="/">Home</a> · <a href="/shop.html">Shop All</a> · <a href="/category/canary-yellow.html">Canary Yellow — Limited Edition</a> · <a href="/shipping.html">Shipping</a>
+<a href="/">Home</a> · <a href="/shop">Shop All</a> · <a href="/category/canary-yellow">Canary Yellow — Limited Edition</a> · <a href="/shipping">Shipping</a>
 </div>
 <div class="small">A Gray Code Enterprise brand · <a href="https://graycodeenterprise.net">graycodeenterprise.net</a></div>
 </footer>
-<script>window.NT_PRODUCT={"slug": "never-told-sweatsuit-set", "sweatsuit": true, "pieces": {"hoodie": {"slug": "never-told-sweatsuit-hoodie", "name": "Never Told Sweatsuit Hoodie", "price_cents": 5000, "image": "/assets/sweatsuit-hoodie-black.jpg"}, "pants": {"slug": "never-told-sweatsuit-pants", "name": "Never Told Sweatsuit Sweatpants", "price_cents": 5000, "image": "/assets/sweatsuit-pants-black.jpg"}}};</script>
+<script>window.NT_PRODUCT={"slug": "never-told-sweatsuit-set", "sweatsuit": true, "pieces": {"hoodie": {"slug": "never-told-sweatsuit-hoodie", "name": "Never Told Sweatsuit Hoodie", "price_cents": 5000, "image": "/assets/sweatsuit-hoodie-black.webp"}, "pants": {"slug": "never-told-sweatsuit-pants", "name": "Never Told Sweatsuit Sweatpants", "price_cents": 5000, "image": "/assets/sweatsuit-pants-black.webp"}}};</script>
 <script src="/assets/cart.js" defer></script>
 </body></html>
